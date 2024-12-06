@@ -1,0 +1,50 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Management</title>
+  <link rel="stylesheet" href="{%static 'index.css'%}">
+</head>
+<body>
+  <header>
+    <h1>Finance Management System</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="card">
+        <h2>New Member</h2>
+        <p>Register a new member in the system.</p>
+        <a href="{% url 'register'%}">Add member</a>
+        
+      </div>
+      <div class="card">
+        <h2>View Member</h2>
+        <p>Search by mobile number.</p>
+        <a href="{% url 'view_members'%}">View members</a>
+      </div>
+      <div class="card">
+        <h2>Daily Collection</h2>
+        <p>View and manage daily collections.</p>
+        <a href="{% url 'daily_collection'%}">View Collection</a>
+      
+      </div>
+      <div class="card">
+        <h2>Paid Status</h2>
+        <p>Check the payment status of members.</p>
+        <a href="{% url 'paid_status'%}">Check status</a>
+        
+      </div>
+     
+   
+    </div>
+        
+     
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Finance Management System</p>
+  </footer>
+</body>
+</html>
